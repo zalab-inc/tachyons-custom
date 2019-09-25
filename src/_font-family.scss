@@ -1,0 +1,46 @@
+/*
+  FONT FAMILY
+
+    Unique Identifier
+      tc = taychons custom 
+      * prevent duplicate with core class of tachyons
+
+    Base:
+      ff = font family
+
+    Modifiers
+      -roboto = font name
+      ...
+
+    Breakpoints / Media Query Extensions:
+      -ns = not-small
+      -m  = medium
+      -l  = large
+
+  
+*/
+
+/*
+  DO NOT EDIT LOOP SETTING !
+    * for static $start, $end, $increment must be 1 value
+*/
+$start: 1; // do not edit !
+$end: 1; // do not edit !
+$increment: 1; // do not edit !
+
+@mixin template($modifier, $breakpoint) {
+  /** EDIT HERE **/
+  /** TEMPLATE START **/
+
+  .tc-ff-roboto#{$breakpoint} {
+    font-family: "Roboto", Courier, monospace;
+  }
+  .tc-ff-monserrat#{$breakpoint} {
+    font-family: "Monserrat", Courier, monospace;
+  }
+
+  /** TEMPLATE END **/
+}
+
+/* RUN BUILDER */
+@include builder();

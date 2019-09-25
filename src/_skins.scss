@@ -1,0 +1,57 @@
+/*
+  TYPE SCALE
+
+    Unique Identifier
+      tc = taychons custom 
+      * prevent duplicate with core class of tachyons
+
+    Base:
+      ?
+      bg- = background color
+      b-- = border color
+
+    Modifiers
+      black-magic = color-name
+      ...
+
+    Breakpoints / Media Query Extensions:
+      -ns = not-small
+      -m  = medium
+      -l  = large
+
+  
+*/
+
+/*
+  DO NOT EDIT LOOP SETTING !
+    * for static $start, $end, $increment must be 1 value
+*/
+$start: 1; // do not edit !
+$end: 1; // do not edit !
+$increment: 1; // do not edit !
+
+@mixin skins_creator($selector, $color, $breakpoint) {
+  /** DO NOT EDIT HERE **/
+  .tc-#{$selector}#{$breakpoint} {
+    color: #{$color};
+  }
+  .tc-bg-#{$selector}#{$breakpoint} {
+    background-color: #{$color};
+  }
+  .tc-b--#{$selector}#{$breakpoint} {
+    border-color: #{$color};
+  }
+}
+
+@mixin template($modifier, $breakpoint) {
+  /** EDIT HERE **/
+  /** TEMPLATE START **/
+  
+  @include skins_creator("black-magic", "#000", $breakpoint);
+  @include skins_creator("white-magic", "#fff", $breakpoint);
+
+  /** TEMPLATE END **/
+}
+
+/* RUN BUILDER */
+@include builder();

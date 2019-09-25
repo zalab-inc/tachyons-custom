@@ -1,0 +1,52 @@
+/*
+  TYPE SCALE
+
+    Unique Identifier
+      tc = taychons custom 
+      * prevent duplicate with core class of tachyons
+
+    Base:
+      f = font-size
+      lh = line-height
+
+    Modifiers
+      1 = 1px
+      2 = 2px
+      ...
+
+    Breakpoints / Media Query Extensions:
+      -ns = not-small
+      -m  = medium
+      -l  = large
+
+  
+*/
+
+/*
+  LOOP SETTING 
+  will use in @builder() mixin
+
+    $start: int() -> start modifiers
+    $end: int() -> end modifiers
+    $increment: int() -> increment modifiers
+*/
+$start: 1;
+$end: 200;
+$increment: 1;
+
+@mixin template($modifier, $breakpoint) {
+  /** EDIT HERE **/
+  /** TEMPLATE START HERE **/
+
+  .tc-f#{$modifier}#{$breakpoint} {
+    font-size: #{$modifier}px;
+  }
+  .tc-lh#{$modifier}#{$breakpoint} {
+    line-height: #{$modifier}px;
+  }
+
+  /** TEMPLATE END HERE **/
+}
+
+/* RUN BUILDER */
+@include builder();

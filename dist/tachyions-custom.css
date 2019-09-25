@@ -1,0 +1,262 @@
+
+
+
+
+
+
+.tc-w1 {
+    width: 1px;
+}
+
+
+
+
+.tc-w2 {
+    width: 2px;
+}
+
+
+
+
+.tc-w3 {
+    width: 3px;
+}
+
+
+
+
+.tc-w4 {
+    width: 4px;
+}
+
+
+
+
+.tc-w5 {
+    width: 5px;
+}
+
+
+
+
+.tc-w6 {
+    width: 6px;
+}
+
+
+
+
+.tc-w7 {
+    width: 7px;
+}
+
+
+
+
+.tc-w8 {
+    width: 8px;
+}
+
+
+
+
+.tc-w9 {
+    width: 9px;
+}
+
+
+
+
+.tc-w10 {
+    width: 10px;
+}
+
+
+@media screen and (min-width: 30em) {
+  
+  
+    .tc-w1-ns {
+        width: 1px;
+    }
+  
+  
+  
+    .tc-w2-ns {
+        width: 2px;
+    }
+  
+  
+  
+    .tc-w3-ns {
+        width: 3px;
+    }
+  
+  
+  
+    .tc-w4-ns {
+        width: 4px;
+    }
+  
+  
+  
+    .tc-w5-ns {
+        width: 5px;
+    }
+  
+  
+  
+    .tc-w6-ns {
+        width: 6px;
+    }
+  
+  
+  
+    .tc-w7-ns {
+        width: 7px;
+    }
+  
+  
+  
+    .tc-w8-ns {
+        width: 8px;
+    }
+  
+  
+  
+    .tc-w9-ns {
+        width: 9px;
+    }
+  
+  
+  
+    .tc-w10-ns {
+        width: 10px;
+    }
+  
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  
+  
+    .tc-w1-m {
+        width: 1px;
+    }
+  
+  
+  
+    .tc-w2-m {
+        width: 2px;
+    }
+  
+  
+  
+    .tc-w3-m {
+        width: 3px;
+    }
+  
+  
+  
+    .tc-w4-m {
+        width: 4px;
+    }
+  
+  
+  
+    .tc-w5-m {
+        width: 5px;
+    }
+  
+  
+  
+    .tc-w6-m {
+        width: 6px;
+    }
+  
+  
+  
+    .tc-w7-m {
+        width: 7px;
+    }
+  
+  
+  
+    .tc-w8-m {
+        width: 8px;
+    }
+  
+  
+  
+    .tc-w9-m {
+        width: 9px;
+    }
+  
+  
+  
+    .tc-w10-m {
+        width: 10px;
+    }
+  
+}
+
+@media screen and (min-width: 60em) {
+  
+  
+    .tc-w1-lg {
+        width: 1px;
+    }
+  
+  
+  
+    .tc-w2-lg {
+        width: 2px;
+    }
+  
+  
+  
+    .tc-w3-lg {
+        width: 3px;
+    }
+  
+  
+  
+    .tc-w4-lg {
+        width: 4px;
+    }
+  
+  
+  
+    .tc-w5-lg {
+        width: 5px;
+    }
+  
+  
+  
+    .tc-w6-lg {
+        width: 6px;
+    }
+  
+  
+  
+    .tc-w7-lg {
+        width: 7px;
+    }
+  
+  
+  
+    .tc-w8-lg {
+        width: 8px;
+    }
+  
+  
+  
+    .tc-w9-lg {
+        width: 9px;
+    }
+  
+  
+  
+    .tc-w10-lg {
+        width: 10px;
+    }
+  
+}

@@ -1,0 +1,100 @@
+/*
+  SPACING
+
+    Unique Identifier
+      tc = taychons custom 
+      * prevent duplicate with core class of tachyons
+
+    Base:
+      p = padding
+      m = margin
+
+    Modifiers
+      a = all
+      h = horizontal
+      v = vertical
+      t = top
+      r = right
+      b = bottom
+      l = left
+
+      1 = 1px
+      2 = 2px
+      ...
+
+    Breakpoints / Media Query Extensions:
+      -ns = not-small
+      -m  = medium
+      -l  = large
+
+  
+*/
+
+/*
+  LOOP SETTING 
+  will use in @builder() mixin
+
+    $start: int() -> start modifiers
+    $end: int() -> end modifiers
+    $increment: int() -> increment modifiers
+*/
+$start: 0;
+$end: 200;
+$increment: 1;
+
+@mixin template($modifier, $breakpoint) {
+  /** EDIT HERE **/
+  /** TEMPLATE START **/
+
+  .tc-ma#{$modifier}#{$breakpoint} {
+    margin: #{$modifier}px;
+  }
+  .tc-mh#{$modifier}#{$breakpoint} {
+    margin-left: #{$modifier}px;
+    margin-right: #{$modifier}px;
+  }
+  .tc-mv#{$modifier}#{$breakpoint} {
+    margin-top: #{$modifier}px;
+    margin-bottom: #{$modifier}px;
+  }
+  .tc-mt#{$modifier}#{$breakpoint} {
+    margin-top: #{$modifier}px;
+  }
+  .tc-mb#{$modifier}#{$breakpoint} {
+    margin-bottom: #{$modifier}px;
+  }
+  .tc-ml#{$modifier}#{$breakpoint} {
+    margin-left: #{$modifier}px;
+  }
+  .tc-mr#{$modifier}#{$breakpoint} {
+    margin-right: #{$modifier}px;
+  }
+  .tc-pa#{$modifier}#{$breakpoint} {
+    padding: #{$modifier}px;
+  }
+  .tc-ph#{$modifier}#{$breakpoint} {
+    padding-left: #{$modifier}px;
+    padding-right: #{$modifier}px;
+  }
+  .tc-pv#{$modifier}#{$breakpoint} {
+    padding-top: #{$modifier}px;
+    padding-bottom: #{$modifier}px;
+  }
+  .tc-pt#{$modifier}#{$breakpoint} {
+    padding-top: #{$modifier}px;
+  }
+  .tc-pb#{$modifier}#{$breakpoint} {
+    padding-bottom: #{$modifier}px;
+  }
+  .tc-pl#{$modifier}#{$breakpoint} {
+    padding-left: #{$modifier}px;
+  }
+  .tc-pr#{$modifier}#{$breakpoint} {
+    padding-right: #{$modifier}px;
+  }
+
+  /** TEMPLATE END **/
+}
+
+/* RUN BUILDER */
+@include builder();

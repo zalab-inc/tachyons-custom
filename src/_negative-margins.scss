@@ -1,0 +1,69 @@
+/*
+  NEGATIVE MARGINS
+
+    Unique Identifier
+      tc = taychons custom 
+      * prevent duplicate with core class of tachyons
+
+    Base:
+      n = negative
+
+    Modifiers
+      a = all
+      t = top
+      r = right
+      b = bottom
+      l = left
+
+
+      1 = 1px
+      2 = 2px
+      ...
+
+    Breakpoints / Media Query Extensions:
+      -ns = not-small
+      -m  = medium
+      -l  = large
+
+  
+*/
+
+/*
+  DO NOT EDIT END !
+  LOOP SETTING 
+  will use in @builder() mixin
+
+    $start: int() -> start modifiers
+    $end: int() -> end modifiers
+    $increment: int() -> increment modifiers
+*/
+$start: -200;
+$end: -1; // do not edit !
+$increment: 1;
+
+@mixin template($modifier, $breakpoint) {
+  /** EDIT HERE **/
+  /** TEMPLATE START **/
+
+  .tc-na#{$modifier * -1}#{$breakpoint} {
+    margin: #{$modifier}px;
+  }
+  .tc-nt#{$modifier * -1}#{$breakpoint} {
+    margin-top: #{$modifier}px;
+  }
+  .tc-nb#{$modifier * -1}#{$breakpoint} {
+    margin-bottom: #{$modifier}px;
+  }
+  .tc-nl#{$modifier * -1}#{$breakpoint} {
+    margin-left: #{$modifier}px;
+  }
+  .tc-nr#{$modifier * -1}#{$breakpoint} {
+    margin-right: #{$modifier}px;
+  }
+  
+
+  /** TEMPLATE END **/
+}
+
+/* RUN BUILDER */
+@include builder();

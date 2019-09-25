@@ -1,0 +1,44 @@
+// BREAKPOINT SETTINGS
+$breakpoints: (
+  'default': null,
+  '-ns': 'screen and (min-width: 30em)',
+  '-m': 'screen and (min-width: 30em) and (max-width: 60em)',
+  '-lg': 'screen and (min-width: 60em)'
+);
+
+// BUILDER MIXINS
+@mixin builder {
+  @each $name, $value in $breakpoints {
+    @if ($name == default) {
+      $modifier: $start;
+      @while $modifier <= $end {
+        @include template($modifier, '');
+        $modifier: $modifier + $increment;
+      }
+    } @else {
+      @media #{$value} {
+        $modifier: $start;
+        @while $modifier <= $end {
+          @include template($modifier, $name);
+          $modifier: $modifier + $increment;
+        }
+      }
+    }
+  }
+}
+
+
+// CUSTOM TACHYONS TO GENERATE
+@import 'font-family';
+@import 'heights';
+@import 'negative-margins';
+@import 'skins';
+@import 'spacing';
+@import 'type-scale';
+@import 'widths';
+
+
+
+
+
+
